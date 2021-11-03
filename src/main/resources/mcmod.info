@@ -1,15 +1,15 @@
 [
 {
-  "modid": "roadstuff",
-  "name": "Road Stuff",
-  "description": "Road Stuff brings everything you needs for your road dreams in Minecraft.",
+  "modid": "justroadstuff",
+  "name": "Just Road Stuff",
+  "description": "Just Road Stuff brings just what you need to build roads in Minecraft, without any cruft.",
   "version": "${version}",
   "mcversion": "${mcversion}",
-  "url": "www.killermapper.net",
+  "url": "dylanlogan.xyz",
   "updateUrl": "",
-  "authorList": ["KillerMapper"],
-  "credits": "MinecraftForgeFrance, BrokenSwing, everyone who worked on Forge, Akosjun for Hungarian translation",
-  "logoFile": "assets/roadstuff/textures/gui/logo.png",
+  "authorList": ["DylanLogan2581"],
+  "credits": "KillerMapper for RoadStuff, MinecraftForgeFrance, BrokenSwing, everyone who worked on Forge, Akosjun for Hungarian translation",
+  "logoFile": "assets/justroadstuff/textures/gui/logo.png",
   "screenshots": [],
   "dependencies": []
 }

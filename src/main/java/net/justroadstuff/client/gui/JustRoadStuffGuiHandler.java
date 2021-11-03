@@ -1,3 +1,4 @@
+/*
 The MIT License (MIT)
 
 Copyright for portions of project JustRoadStuff are held by (c) 2015 KillerMapper as part of project RoadStuff.
@@ -20,3 +21,34 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+*/
+
+package net.justroadstuff.client.gui;
+
+import cpw.mods.fml.common.network.IGuiHandler;
+import net.justroadstuff.common.tiles.TileEntityBlockTrafficSign;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.world.World;
+
+public class JustRoadStuffGuiHandler implements IGuiHandler
+{
+
+    @Override
+    public Object getServerGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z)
+    {
+        return null;
+    }
+
+    @Override
+    public Object getClientGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z)
+    {
+        TileEntity tile = world.getTileEntity(x, y, z);
+        if(tile instanceof TileEntityBlockTrafficSign)
+        {
+            return new GuiTrafficSign((TileEntityBlockTrafficSign)tile);
+        }
+        return null;
+    }
+
+}

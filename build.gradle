@@ -19,19 +19,11 @@ apply plugin: 'forge'
 
 repositories {
 	mavenCentral()
-	maven {
-       name 'CB Repo'
-       url "http://chickenbones.net/maven/"
-	}
-	maven {
-       name "Chisel"
-       url = "http://maven.tterrag.com/"
-   }
 }
 
-version = "1.0.2-final"
-group= "net.killermapper.roadstuff" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "RoadStuff-mc1.7.10"
+version = "0.1"
+group= "net.justroadstuff" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = "JustRoadStuff"
 
 minecraft {
     version = "${mc_version}-${forge_version}"
@@ -51,13 +43,6 @@ dependencies {
     // for more info...
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
-	
-	compile "codechicken:CodeChickenCore:${mc_version}-${ccc_version}:dev"
-	compile "codechicken:CodeChickenLib:${mc_version}-${ccl_version}:dev"
-	compile "codechicken:ForgeMultipart:${mc_version}-${fmp_version}:dev"
-	compile "com.cricketcraft.ctmlib:CTMLib:${ctmlib_version}:deobf"
-	compile "com.cricketcraft.chisel:Chisel2:${chisel_version}:deobf"
-	
 }
 
 processResources

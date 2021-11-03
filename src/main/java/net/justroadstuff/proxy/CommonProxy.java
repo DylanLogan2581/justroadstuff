@@ -1,3 +1,4 @@
+/*
 The MIT License (MIT)
 
 Copyright for portions of project JustRoadStuff are held by (c) 2015 KillerMapper as part of project RoadStuff.
@@ -20,3 +21,16 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+*/
+
+package net.justroadstuff.proxy;
+
+public class CommonProxy
+{
+
+    public void registerRender()
+    {
+        
+    }
+
+}
